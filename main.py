@@ -24,5 +24,6 @@ ot_wout_duplicates = identify_and_remove_duplicates(online_trans)
 print("Removing any duplicates")
 
 # load the data to s3
-load_df_to_s3(ot_wout_duplicates, key, aws_s3_bucket, aws_access_key, aws_secret_access_key)
 print("Loading to s3 bucket")
+load_df_to_s3(ot_wout_duplicates, key, aws_s3_bucket, aws_access_key, aws_secret_access_key)
+print("Loaded to s3 bucket is finished")
